@@ -1,3 +1,2 @@
 "# ZomtatoClone" 
-
-https://github.com/vasudev19126
+@vasudev19126
