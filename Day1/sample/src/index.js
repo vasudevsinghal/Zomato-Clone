@@ -34,23 +34,13 @@ function SaluteAll() {
           Click me
         </button>
       </div>
-      <button onClick={ () => {
-        if(info.length>0){
-          let item = info.pop();
-          info2.push(item);
-        }
-        console.log(info);
-        console.log(info2);
-        setInfo(info);
-        setInfo2(info2);
-      }}>Click me</button>
+      <button onClick={shift}>Click me</button>
       <h1>List 1</h1>
       <div>
       {info.map(([fname, lname], index) => {
         return <Salute fname={fname} lname={lname} key={index}/>;
       })}
       </div>
-      
       <h1>List 2</h1>
         <div>
         {info2.map(([fname, lname], index) => {
