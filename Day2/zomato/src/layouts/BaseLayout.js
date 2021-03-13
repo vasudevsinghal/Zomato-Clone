@@ -11,17 +11,17 @@ function BaseLayout(){
     return(
         <div>
             <Switch>
-          <Route path="/order">
-            <OrderPage />
-          </Route>
-          <Route path="/gold">
-            <GoldPage/>
-          </Route>
-          <Route path="/profile">
-            <ProfilePage />
-          </Route>
-        </Switch>
-        <BottomNav></BottomNav>
+            <Route path="/order">
+                <OrderPage />
+            </Route>
+            <Route path="/gold">
+                <GoldPage/>
+            </Route>
+            <Route path="/profile">
+                <ProfilePage />
+            </Route>
+            </Switch>
+            <BottomNav></BottomNav>
         </div>
         
     );
