@@ -2,16 +2,19 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+import StarsRoundedIcon from '@material-ui/icons/StarsRounded';
+import OutdoorGrillIcon from '@material-ui/icons/OutdoorGrill';
+import PersonIcon from '@material-ui/icons/Person';
+import SearchIcon from '@material-ui/icons/Search';
+
+
+
 import {useHistory, useLocation} from "react-router-dom";
 
 
 const useStyles = makeStyles({
-  root: {
-    width: 500,
-  },
+  root: {},
 });
 
 export default function BottomNav() {
@@ -26,9 +29,9 @@ export default function BottomNav() {
     <BottomNavigation
     style={{
         position : "fixed",
-        bottom : "0%",
-        left : "0%",
-        right : "0%"
+        bottom : "0px",
+        left : "0px",
+        right : "0px"
     }}
       value={value}
       onChange={(event, newValue) => {
@@ -38,9 +41,11 @@ export default function BottomNav() {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction label="Order" value= "/order" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Gold" value= "/gold" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Profile" value= "/profile" icon={<LocationOnIcon />} />
+      <BottomNavigationAction label="Order" value= "/order" icon={<AddShoppingCartIcon />} />
+      <BottomNavigationAction label="GoOut" value= "/out" icon={<OutdoorGrillIcon />} />
+      <BottomNavigationAction label="Gold" value= "/gold" icon={<StarsRoundedIcon />} />
+      <BottomNavigationAction label="Search" value= "/search" icon={<SearchIcon />} />
+      <BottomNavigationAction label="Profile" value= "/profile" icon={<PersonIcon />} />
     </BottomNavigation>
   );
 }
