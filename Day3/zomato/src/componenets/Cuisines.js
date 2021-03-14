@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Avatar, Box, Button, Collapse} from '@material-ui/core';
+import { Avatar, Box, Button} from '@material-ui/core';
 import { makeStyles} from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
@@ -27,7 +27,7 @@ export default function Cuisines() {
         })}
         <Button onClick={()=>{
             setLess(!less);
-            if(show=="Show More"){
+            if(show==="Show More"){
                 setShow("Show Less");
             }
             else{
