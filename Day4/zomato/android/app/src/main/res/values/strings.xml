@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">zomato</string>
-    <string name="title_activity_main">zomato</string>
-    <string name="package_name">io.ionic.zomtatoclone</string>
-    <string name="custom_url_scheme">io.ionic.zomtatoclone</string>
-</resources>
