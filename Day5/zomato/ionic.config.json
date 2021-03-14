@@ -1,0 +1,7 @@
+{
+  "name": "zomato",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
