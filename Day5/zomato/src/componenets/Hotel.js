@@ -16,7 +16,7 @@ function Hotel({hotel}){
             history.push("/detail");
         }}>
             <CardMedia component="img" 
-            src={"http://localhost:3000"+hotel.path.substring(1)}>
+            src={"http://localhost:5000"+hotel.path.substring(1)}>
             </CardMedia>
             <CardContent>
                 <Box display="flex">

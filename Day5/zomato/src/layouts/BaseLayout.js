@@ -12,7 +12,9 @@ import BottomNav from "../componenets/BottomNav";
 
 function BaseLayout({user, setUser}){
     return(
-        <div>
+        <div style={{
+            height : window.innerHeight
+        }}>
             <Switch>
             <Route path="/order">
                 <OrderPage />

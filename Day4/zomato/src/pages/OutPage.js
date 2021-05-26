@@ -6,7 +6,7 @@ function OutPage(){
     let [users, setUsers] = useState([]);
 
   let fetch = () =>{
-      axios.get("http://localhost:3000/hotels").then((response) => {
+      axios.get("http://localhost:5000/hotels").then((response) => {
         setUsers(response.data);
       })
   }
