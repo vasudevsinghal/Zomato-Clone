@@ -19,7 +19,7 @@ function OrderPage() {
 
   useEffect(() => {
     // console.log("asjdas");
-    axios.get("http://localhost:5000/hotels").then((res) => {
+    axios.get("http://localhost:5001/hotels").then((res) => {
       setHotels(res.data);
       // console.log(res.data);
     });

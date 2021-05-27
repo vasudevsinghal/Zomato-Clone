@@ -44,7 +44,6 @@ export default function BottomNav() {
       <BottomNavigationAction label="Order" value= "/order" icon={<AddShoppingCartIcon />} />
       <BottomNavigationAction label="GoOut" value= "/out" icon={<OutdoorGrillIcon />} />
       <BottomNavigationAction label="Gold" value= "/gold" icon={<StarsRoundedIcon />} />
-      <BottomNavigationAction label="Search" value= "/search" icon={<SearchIcon />} />
       <BottomNavigationAction label="Profile" value= "/profile" icon={<PersonIcon />} />
     </BottomNavigation>
   );

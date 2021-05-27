@@ -7,7 +7,6 @@ import OrderPage from "../pages/OrderPage";
 import ProfilePage from "../pages/ProfilePage";
 import OutPage from "../pages/OutPage";
 import DetailPage from "../pages/DetailPage";
-import SearchPage from "../pages/SearchPage";
 import BottomNav from "../componenets/BottomNav";
 
 function BaseLayout({user, setUser}){
@@ -27,9 +26,6 @@ function BaseLayout({user, setUser}){
             </Route>
             <Route path="/out">
                 <OutPage />
-            </Route>
-            <Route path="/search">
-                <SearchPage />
             </Route>
             <Route path="/detail">
                 <DetailPage />
